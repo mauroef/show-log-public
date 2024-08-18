@@ -17,7 +17,7 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   return (
     <html lang='en'>
-      {/* <head>
+      <head>
         <Script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}`}
@@ -30,7 +30,7 @@ const RootLayout = ({ children }) => {
               gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}');
           `}
         </Script>
-      </head> */}
+      </head>
       <body className={oxygen.className}>{children}</body>
     </html>
   );
